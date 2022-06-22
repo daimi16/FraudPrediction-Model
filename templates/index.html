@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model Deployment</title>
+</head>
+<body>
+  <h1>Enter the transaction Details</h1>
+  <p>
+    Enter the transaction Details
+  </p>
+  <form action="/" method="POST">
+    <input type="number" name="step" placeholder="Step" required="required" />
+    <input type="number" name="type" placeholder="Type" required="required" />
+    <input type="number" name="amount" placeholder="Amount" required="required" step="any" />
+    <input type="number" name="oldbalanceOrg" placeholder="Old balance of origin account" required="required" step="any" />
+    <input type="number" name="newbalanceOrig" placeholder="New balance of origin account" required="required" step="any" />
+    <input type="number" name="oldbalanceDest" placeholder="Old balance Dest account" required="required" step="any" />
+    <input type="number" name="newbalanceDest" placeholder="New balance of dest account" required="required" step="any"/>
+    <input type="number" name="isFlaggedFraud" placeholder="Flagged as Fraud" required="required" />  
+    <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+  </form>
+  
+</body>
+</html>
